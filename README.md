@@ -4,7 +4,7 @@ This repository show the code to upscale pictures by 4x using [ESRGAN](https://g
 
 Given a low resolution picture, the goal is to upscale by 4x and compare with the Bicubic Algorithm.
 
-As you can see, the results are very good. Try yourself
+As you can see, the results are very good. Try yourself!
 
 ### Demo
 ![Demo](screenshot/demo.gif)
@@ -22,14 +22,21 @@ As you can see, the results are very good. Try yourself
 ```bash
 git clone https://github.com/renatoviolin/Deploying-YOLOv5-fastapi-celery-redis-rabbitmq.git
 cd Deploying-YOLOv5-fastapi-celery-redis-rabbitmq
+
 ```
 
-2. Install dependencies
+2. Download the pre-trained model
+```bash
+wget "https://www.dropbox.com/s/58x64ex9m047gdy/model.pth?dl=0" -O esrgan/model.pth
+
+```
+
+3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Start web-application
+4. Start web-application
 ```bash
 cd web-app
 uvicorn app:app --host 0.0.0.0 --port 8000
