@@ -1,0 +1,47 @@
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	display: none;
+	background-color: #99999978;
+	z-index: 1000 !important;
+}
+
+.spinner-border {
+	top: 50% !important;
+	position: absolute;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	background: #1462dc;
+	padding: 13px;
+	line-height: 30px;
+	color: white;
+}
+
+h4 {
+	margin-top: 20px;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+	display: block;
+}
+
+.img_full {
+	width: 100%;
+}
+
+#show-label {
+	text-align: center;
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	color: #FFF;
+	margin-bottom: 5px;
+}
